@@ -54,7 +54,7 @@ nav {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 120px 20px 80px;
+    padding: 80px 20px 60px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
 }
@@ -107,7 +107,7 @@ nav {
 
 /* About Section */
 .about {
-    padding: 80px 20px;
+    padding: 60px 20px;
     background-color: var(--background);
     text-align: center;
 }
@@ -140,7 +140,7 @@ nav {
 
 /* Features Section */
 .features {
-    padding: 80px 20px;
+    padding: 60px 20px;
     background-color: var(--background-alt);
 }
 
@@ -190,62 +190,9 @@ nav {
     color: var(--text-light);
 }
 
-/* How It Works Section */
-.how-it-works {
-    padding: 80px 20px;
-    background-color: var(--background);
-}
-
-.how-it-works h2 {
-    font-size: 42px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 60px;
-    color: var(--text-color);
-}
-
-.steps {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 40px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.step {
-    text-align: center;
-}
-
-.step-number {
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 28px;
-    font-weight: 700;
-    margin: 0 auto 20px;
-}
-
-.step h3 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: var(--text-color);
-}
-
-.step p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: var(--text-light);
-}
-
 /* Use Cases Section */
 .use-cases {
-    padding: 80px 20px;
+    padding: 60px 20px;
     background-color: var(--background-alt);
 }
 
@@ -280,7 +227,7 @@ nav {
 
 /* CTA Section */
 .cta {
-    padding: 100px 20px;
+    padding: 70px 20px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     text-align: center;
@@ -296,6 +243,12 @@ nav {
     font-size: 22px;
     margin-bottom: 40px;
     opacity: 0.95;
+}
+
+.cta .opensource-note {
+    font-size: 18px;
+    margin-bottom: 20px;
+    opacity: 0.9;
 }
 
 /* Footer */
@@ -334,7 +287,6 @@ footer a:hover {
 
     .about h2,
     .features h2,
-    .how-it-works h2,
     .use-cases h2,
     .cta h2 {
         font-size: 32px;
@@ -348,10 +300,6 @@ footer a:hover {
         grid-template-columns: 1fr;
     }
 
-    .steps {
-        grid-template-columns: 1fr;
-    }
-
     .use-case-list li {
         font-size: 18px;
     }
@@ -359,7 +307,7 @@ footer a:hover {
 
 @media (max-width: 480px) {
     .hero {
-        padding: 80px 20px 60px;
+        padding: 60px 20px 50px;
     }
 
     .hero h1 {
