@@ -42,11 +42,11 @@ header {
 }
 
 nav {
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 .logo h1 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     color: var(--text-color);
 }
@@ -54,24 +54,24 @@ nav {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 120px 20px 80px;
+    padding: 50px 20px 40px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
 }
 
 .hero h1 {
-    font-size: 56px;
+    font-size: 42px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     letter-spacing: -0.5px;
 }
 
 .hero .tagline {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     opacity: 0.95;
-    max-width: 700px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -79,18 +79,18 @@ nav {
 /* Buttons */
 .cta-buttons {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .btn {
     display: inline-block;
-    padding: 14px 32px;
-    font-size: 18px;
+    padding: 12px 28px;
+    font-size: 16px;
     font-weight: 500;
     text-decoration: none;
-    border-radius: 12px;
+    border-radius: 10px;
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -107,168 +107,127 @@ nav {
 
 /* About Section */
 .about {
-    padding: 80px 20px;
+    padding: 40px 20px;
     background-color: var(--background);
     text-align: center;
 }
 
 .about h2 {
-    font-size: 42px;
+    font-size: 32px;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: var(--text-color);
 }
 
 .about .lead {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: var(--text-color);
-    max-width: 800px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .about p {
-    font-size: 18px;
-    line-height: 1.8;
+    font-size: 16px;
+    line-height: 1.6;
     color: var(--text-light);
-    max-width: 800px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
 
 /* Features Section */
 .features {
-    padding: 80px 20px;
+    padding: 40px 20px 35px;
     background-color: var(--background-alt);
 }
 
 .features h2 {
-    font-size: 42px;
+    font-size: 32px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 15px;
     color: var(--text-color);
+}
+
+.features-intro {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--text-light);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .feature-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .feature-card {
     background-color: var(--background);
-    padding: 40px 30px;
-    border-radius: 16px;
+    padding: 25px 20px;
+    border-radius: 12px;
     box-shadow: var(--shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
 }
 
 .feature-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
     box-shadow: var(--shadow-lg);
 }
 
 .feature-icon {
-    font-size: 48px;
-    margin-bottom: 20px;
+    font-size: 36px;
+    margin-bottom: 12px;
 }
 
 .feature-card h3 {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     color: var(--text-color);
 }
 
 .feature-card p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: var(--text-light);
-}
-
-/* How It Works Section */
-.how-it-works {
-    padding: 80px 20px;
-    background-color: var(--background);
-}
-
-.how-it-works h2 {
-    font-size: 42px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 60px;
-    color: var(--text-color);
-}
-
-.steps {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 40px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.step {
-    text-align: center;
-}
-
-.step-number {
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 28px;
-    font-weight: 700;
-    margin: 0 auto 20px;
-}
-
-.step h3 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: var(--text-color);
-}
-
-.step p {
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 14px;
+    line-height: 1.5;
     color: var(--text-light);
 }
 
 /* Use Cases Section */
 .use-cases {
-    padding: 80px 20px;
-    background-color: var(--background-alt);
+    padding: 40px 20px;
+    background-color: var(--background);
 }
 
 .use-cases h2 {
-    font-size: 42px;
+    font-size: 28px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     color: var(--text-color);
 }
 
 .use-case-list {
     list-style: none;
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
 .use-case-list li {
-    font-size: 20px;
-    padding: 20px;
-    margin-bottom: 15px;
-    background-color: var(--background);
-    border-radius: 12px;
+    font-size: 16px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    background-color: var(--background-alt);
+    border-radius: 10px;
     box-shadow: var(--shadow);
     color: var(--text-color);
     transition: transform 0.2s ease;
@@ -280,35 +239,42 @@ nav {
 
 /* CTA Section */
 .cta {
-    padding: 100px 20px;
+    padding: 50px 20px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     text-align: center;
 }
 
 .cta h2 {
-    font-size: 42px;
+    font-size: 32px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .cta p {
-    font-size: 22px;
-    margin-bottom: 40px;
+    font-size: 18px;
+    margin-bottom: 25px;
     opacity: 0.95;
+}
+
+.cta .opensource-note {
+    font-size: 16px;
+    margin-bottom: 18px;
+    opacity: 0.9;
 }
 
 /* Footer */
 footer {
     background-color: var(--text-color);
     color: white;
-    padding: 40px 20px;
+    padding: 30px 20px;
     text-align: center;
 }
 
 footer p {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     opacity: 0.8;
+    font-size: 14px;
 }
 
 footer a {
@@ -325,53 +291,48 @@ footer a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .hero .tagline {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .about h2,
     .features h2,
-    .how-it-works h2,
     .use-cases h2,
     .cta h2 {
-        font-size: 32px;
+        font-size: 26px;
     }
 
     .about .lead {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .feature-grid {
         grid-template-columns: 1fr;
     }
 
-    .steps {
-        grid-template-columns: 1fr;
-    }
-
     .use-case-list li {
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 
 @media (max-width: 480px) {
     .hero {
-        padding: 80px 20px 60px;
+        padding: 40px 20px 35px;
     }
 
     .hero h1 {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .hero .tagline {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .btn {
-        padding: 12px 24px;
-        font-size: 16px;
+        padding: 10px 22px;
+        font-size: 15px;
     }
 }
