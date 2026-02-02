@@ -614,20 +614,24 @@ footer {
 }
 
 footer p {
-    margin-bottom: 8px;
+    margin: 0 0 8px 0;
     opacity: 0.8;
     font-size: 14px;
+}
+
+footer p:last-child {
+    margin-bottom: 0;
 }
 
 footer a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
     transition: opacity 0.3s ease;
 }
 
 footer a:hover {
     opacity: 0.7;
+    text-decoration: underline;
 }
 
 /* Responsive Design */
