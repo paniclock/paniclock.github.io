@@ -105,6 +105,18 @@ nav {
     box-shadow: var(--shadow-lg);
 }
 
+.btn-secondary {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
 /* About Section */
 .about {
     padding: 40px 20px;
@@ -411,15 +423,15 @@ nav {
 
 .persona-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 25px;
-    max-width: 1000px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 .persona-card {
     background-color: var(--background);
-    padding: 30px 25px;
+    padding: 25px 18px;
     border-radius: 12px;
     box-shadow: var(--shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -432,20 +444,20 @@ nav {
 }
 
 .persona-icon {
-    font-size: 40px;
-    margin-bottom: 15px;
+    font-size: 36px;
+    margin-bottom: 12px;
 }
 
 .persona-card h3 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     color: var(--text-color);
 }
 
 .persona-card p {
-    font-size: 15px;
-    line-height: 1.6;
+    font-size: 14px;
+    line-height: 1.5;
     color: var(--text-light);
 }
 
@@ -526,9 +538,12 @@ footer a:hover {
         font-size: 16px;
     }
 
-    .feature-grid,
-    .persona-grid {
+    .feature-grid {
         grid-template-columns: 1fr;
+    }
+
+    .persona-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .comparison {
@@ -556,5 +571,9 @@ footer a:hover {
     .btn {
         padding: 10px 22px;
         font-size: 15px;
+    }
+
+    .persona-grid {
+        grid-template-columns: 1fr;
     }
 }
