@@ -99,9 +99,79 @@
         <section id="legal" class="legal">
             <div class="container">
                 <h2>Legal Protection Matters</h2>
-                <div class="legal-content">
-                    <p class="legal-highlight">⚖️ <strong>Biometrics can be compelled by law enforcement in many jurisdictions</strong></p>
-                    <p>Passwords generally have stronger legal protection under the 5th Amendment in the US. When it matters, forcing password-only authentication adds a critical layer of legal defense.</p>
+                
+                <div class="legal-section">
+                    <h3>Passwords vs Biometrics: The US Legal Divide</h3>
+                    <p>US courts are split on whether law enforcement can compel you to unlock a device using biometrics. Passwords and passcodes are generally treated as <strong>testimonial</strong> under the Fifth Amendment, they reveal the contents of your mind and are therefore protected. Biometrics, by contrast, have often been treated as <strong>physical evidence</strong>, more like fingerprints or DNA.</p>
+                    <p>That distinction is now breaking down.</p>
+                </div>
+
+                <div class="legal-case">
+                    <h3>Ninth Circuit — <em>United States v. Payne</em> (April 2024)</h3>
+                    <p>In <em>United States v. Payne</em>, the Ninth Circuit held that <strong>compelling a suspect to unlock a phone using a fingerprint did not violate the Fifth Amendment</strong>.</p>
+                    <p>Police physically grabbed Payne's thumb and used it to unlock his phone after he refused to provide the passcode. The court concluded this did not implicate the Fifth Amendment because the act required <strong>no cognitive exertion</strong> and did not reveal the contents of Payne's mind.</p>
+                    <p>The court analogized the compelled fingerprint unlock to traditional forms of physical evidence collection, such as fingerprints taken during booking or a blood draw.</p>
+                    <p><strong>Holding:</strong> No Fifth Amendment violation.</p>
+                    <p><strong>Source:</strong></p>
+                    <ul>
+                        <li>Ninth Circuit opinion (April 17, 2024): <a href="https://cdn.ca9.uscourts.gov/datastore/opinions/2024/04/17/22-50147.pdf" target="_blank">https://cdn.ca9.uscourts.gov/datastore/opinions/2024/04/17/22-50147.pdf</a></li>
+                    </ul>
+                </div>
+
+                <div class="legal-case">
+                    <h3>D.C. Circuit — <em>United States v. Brown</em> (January 2025)</h3>
+                    <p>The D.C. Circuit reached the opposite conclusion in <em>United States v. Brown</em>.</p>
+                    <p>In that case, the FBI compelled the defendant to unlock his phone using a fingerprint. The court held that this <strong>did violate the Fifth Amendment</strong>, reasoning that the act of unlocking the phone communicated protected facts — including that the defendant knew how to open the device and exercised control over its contents.</p>
+                    <p>Rather than treating biometric unlocking as purely physical, the court emphasized the <strong>implicit testimonial communication</strong> involved in successfully unlocking a personal device.</p>
+                    <p><strong>Holding:</strong> Compelled biometric unlocking was testimonial and unconstitutional.</p>
+                    <p><strong>Sources:</strong></p>
+                    <ul>
+                        <li>D.C. Circuit opinion (Jan. 17, 2025): <a href="https://law.justia.com/cases/federal/appellate-courts/cadc/23-3074/23-3074-2025-01-17.html" target="_blank">https://law.justia.com/cases/federal/appellate-courts/cadc/23-3074/23-3074-2025-01-17.html</a></li>
+                        <li>Arnold &amp; Porter analysis: <a href="https://www.arnoldporter.com/en/perspectives/advisories/2025/03/when-your-fingers-do-the-talking" target="_blank">https://www.arnoldporter.com/en/perspectives/advisories/2025/03/when-your-fingers-do-the-talking</a></li>
+                    </ul>
+                </div>
+
+                <div class="legal-section">
+                    <h3>A Real Circuit Split</h3>
+                    <p>These decisions create a direct circuit split:</p>
+                    <ul>
+                        <li>The <strong>Ninth Circuit</strong> treats biometric unlocking as non-testimonial physical evidence.</li>
+                        <li>The <strong>D.C. Circuit</strong> treats it as testimonial compelled communication.</li>
+                    </ul>
+                    <p>That split makes eventual Supreme Court review likely. Until then, your constitutional protection depends on <strong>where you are</strong>.</p>
+                </div>
+
+                <div class="legal-case">
+                    <h3>Hannah Natanson — <em>Washington Post</em> (January 2026)</h3>
+                    <p>On January 14, 2026, FBI agents executed a search warrant at the home of <em>Washington Post</em> reporter <strong>Hannah Natanson</strong>, seizing her phone, two laptops, and a Garmin watch.</p>
+                    <p>The warrant reportedly included a section explicitly titled <strong>"Biometric Unlock"</strong>, authorizing agents to attempt to unlock seized devices using Natanson's face or fingerprints rather than demanding a passcode.</p>
+                    <p>Natanson had communicated with more than <strong>1,100 confidential sources</strong> using Signal and other encrypted tools. The warrant created a legal pathway to access those communications <strong>without compelling her to disclose a password</strong>.</p>
+                    <p>Security and press-freedom experts warned that biometric unlock provisions collapse the practical barrier between possession of a seized device and access to its encrypted contents.</p>
+                    <p><strong>Sources:</strong></p>
+                    <ul>
+                        <li>Columbia Journalism Review — <em>Nothing Is Secure</em>: <a href="https://www.cjr.org/news/hannah-natanson-fbi-washington-post-raid-devices-seized-runa-sandvik-security-computer-phone-laptop-sources.php" target="_blank">https://www.cjr.org/news/hannah-natanson-fbi-washington-post-raid-devices-seized-runa-sandvik-security-computer-phone-laptop-sources.php</a></li>
+                        <li>Reporters Committee for Freedom of the Press explainer: <a href="https://www.rcfp.org/fbi-raid-washington-post-explainer/" target="_blank">https://www.rcfp.org/fbi-raid-washington-post-explainer/</a></li>
+                    </ul>
+                </div>
+
+                <div class="legal-section">
+                    <h3>US Border Searches</h3>
+                    <p>At US ports of entry, Customs and Border Protection (CBP) can search electronic devices without a warrant. The more complex question is what they can <strong>compel</strong>.</p>
+                    <p>If your device is protected by a <strong>password</strong>, you may refuse to provide it. CBP can seize the device, but the encryption barrier remains legally and technically intact.</p>
+                    <p>If <strong>biometrics</strong> are enabled, that barrier may not exist. Agents can potentially unlock your device using your face or fingerprint — sometimes without your cooperation, and in some jurisdictions without violating the Fifth Amendment.</p>
+                    <p>For people carrying privileged or sensitive material, journalists protecting sources, lawyers with client communications, activists with vulnerable contacts, disabling biometrics before reaching the border restores the legal distinction between <em>possessing</em> a device and <em>accessing</em> its contents.</p>
+                    <p><strong>Sources:</strong></p>
+                    <ul>
+                        <li>EFF — Border Searches: <a href="https://www.eff.org/issues/border-searches" target="_blank">https://www.eff.org/issues/border-searches</a></li>
+                        <li>Cornell University — Digital Privacy at the Border: <a href="https://global.cornell.edu/travel/planning/traveling-technology/digital-privacy" target="_blank">https://global.cornell.edu/travel/planning/traveling-technology/digital-privacy</a></li>
+                    </ul>
+                </div>
+
+                <div class="legal-section">
+                    <h3>International: Compelled Disclosure Laws</h3>
+                    <p>In some countries, the biometrics-versus-password distinction is legally irrelevant: the law may criminally compel password disclosure.</p>
+                    <p>Even then, the difference matters.</p>
+                    <p>With passwords, you retain agency, you may refuse and face legal consequences. With biometrics enabled, that choice may be taken from you entirely.</p>
                 </div>
             </div>
         </section>

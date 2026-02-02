@@ -350,7 +350,7 @@ nav {
     font-size: 32px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     color: var(--text-color);
 }
 
@@ -372,6 +372,118 @@ nav {
     font-size: 16px;
     line-height: 1.7;
     color: var(--text-light);
+}
+
+.legal-section {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    padding: 25px 30px;
+    background-color: var(--background);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    text-align: left;
+}
+
+.legal-section h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.legal-section p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.legal-section ul {
+    margin: 10px 0 0 20px;
+    padding: 0;
+}
+
+.legal-section ul li {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+.legal-section strong {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.legal-section em {
+    font-style: italic;
+}
+
+.legal-section a {
+    color: var(--primary-color);
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.legal-section a:hover {
+    text-decoration: underline;
+}
+
+.legal-case {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    padding: 25px 30px;
+    background-color: var(--background);
+    border-left: 4px solid var(--primary-color);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    text-align: left;
+}
+
+.legal-case h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.legal-case p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.legal-case ul {
+    margin: 10px 0 0 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.legal-case ul li {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+.legal-case strong {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.legal-case em {
+    font-style: italic;
+}
+
+.legal-case a {
+    color: var(--primary-color);
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.legal-case a:hover {
+    text-decoration: underline;
 }
 
 /* Use Cases Section */
