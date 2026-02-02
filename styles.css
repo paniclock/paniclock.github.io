@@ -138,9 +138,52 @@ nav {
     margin-right: auto;
 }
 
+/* Why Section */
+.why {
+    padding: 50px 20px;
+    background-color: var(--background);
+    text-align: center;
+}
+
+.why h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.section-intro {
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--text-color);
+    max-width: 750px;
+    margin: 0 auto 15px;
+}
+
+.section-intro strong {
+    color: var(--text-color);
+}
+
+.info-box {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+    border-left: 4px solid var(--primary-color);
+    padding: 20px 25px;
+    margin: 25px auto 0;
+    max-width: 750px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.info-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+}
+
 /* Features Section */
 .features {
-    padding: 40px 20px 35px;
+    padding: 50px 20px 40px;
     background-color: var(--background-alt);
 }
 
@@ -202,30 +245,141 @@ nav {
     color: var(--text-light);
 }
 
-/* Use Cases Section */
-.use-cases {
-    padding: 40px 20px;
+/* Security Comparison Section */
+.security {
+    padding: 50px 20px;
     background-color: var(--background);
 }
 
-.use-cases h2 {
-    font-size: 28px;
+.security h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+.comparison {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 900px;
+    margin: 0 auto 30px;
+}
+
+.comparison-card {
+    background-color: var(--background-alt);
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.comparison-card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.comparison-card p {
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: var(--text-light);
+}
+
+.comparison-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.comparison-card ul li {
+    font-size: 15px;
+    padding: 8px 0;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.comparison-card ul li:last-child {
+    border-bottom: none;
+}
+
+.security-note {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-color);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.security-note strong {
+    color: var(--text-color);
+}
+
+.security-note em {
+    font-style: italic;
+}
+
+/* Legal Section */
+.legal {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+    border-top: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
+}
+
+.legal h2 {
+    font-size: 32px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 25px;
     color: var(--text-color);
 }
 
+.legal-content {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.legal-highlight {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.legal-content p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-light);
+}
+
+/* Use Cases Section */
+.use-cases {
+    padding: 50px 20px;
+    background-color: var(--background);
+}
+
+.use-cases h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
 .use-case-list {
     list-style: none;
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
 .use-case-list li {
     font-size: 16px;
-    padding: 14px 18px;
-    margin-bottom: 10px;
+    padding: 16px 20px;
+    margin-bottom: 12px;
     background-color: var(--background-alt);
     border-radius: 10px;
     box-shadow: var(--shadow);
@@ -233,8 +387,66 @@ nav {
     transition: transform 0.2s ease;
 }
 
+.use-case-list li strong {
+    font-weight: 600;
+}
+
 .use-case-list li:hover {
     transform: translateX(5px);
+}
+
+/* For Whom Section */
+.for-whom {
+    padding: 50px 20px;
+    background-color: var(--background-alt);
+}
+
+.for-whom h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 35px;
+    color: var(--text-color);
+}
+
+.persona-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.persona-card {
+    background-color: var(--background);
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.persona-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.persona-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.persona-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.persona-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text-light);
 }
 
 /* CTA Section */
@@ -299,17 +511,27 @@ footer a:hover {
     }
 
     .about h2,
+    .why h2,
     .features h2,
+    .security h2,
+    .legal h2,
     .use-cases h2,
+    .for-whom h2,
     .cta h2 {
         font-size: 26px;
     }
 
-    .about .lead {
+    .about .lead,
+    .section-intro {
         font-size: 16px;
     }
 
-    .feature-grid {
+    .feature-grid,
+    .persona-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .comparison {
         grid-template-columns: 1fr;
     }
 
