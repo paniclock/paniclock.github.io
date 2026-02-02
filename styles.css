@@ -490,14 +490,37 @@ nav {
 .use-cases {
     padding: 50px 20px;
     background-color: var(--background);
+    text-align: center;
 }
 
 .use-cases h2 {
     font-size: 32px;
     font-weight: 700;
-    text-align: center;
     margin-bottom: 20px;
     color: var(--text-color);
+}
+
+.use-cases p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.use-cases .opensource-note {
+    font-size: 16px;
+    margin-bottom: 25px;
+    opacity: 0.8;
+}
+
+.use-cases .btn-secondary {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.use-cases .btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: white;
 }
 
 .use-case-list {
@@ -614,20 +637,24 @@ footer {
 }
 
 footer p {
-    margin-bottom: 8px;
+    margin: 0 0 8px 0;
     opacity: 0.8;
     font-size: 14px;
+}
+
+footer p:last-child {
+    margin-bottom: 0;
 }
 
 footer a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
     transition: opacity 0.3s ease;
 }
 
 footer a:hover {
     opacity: 0.7;
+    text-decoration: underline;
 }
 
 /* Responsive Design */
