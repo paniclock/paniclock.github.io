@@ -490,14 +490,26 @@ nav {
 .use-cases {
     padding: 50px 20px;
     background-color: var(--background);
+    text-align: center;
 }
 
 .use-cases h2 {
     font-size: 32px;
     font-weight: 700;
-    text-align: center;
     margin-bottom: 20px;
     color: var(--text-color);
+}
+
+.use-cases p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.use-cases .opensource-note {
+    font-size: 16px;
+    margin-bottom: 25px;
+    opacity: 0.8;
 }
 
 .use-case-list {
