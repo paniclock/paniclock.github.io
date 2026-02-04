@@ -10,24 +10,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="container">
-                <div class="logo">
-                    <h1>🔒 PanicLock</h1>
-                </div>
-            </div>
-        </nav>
-    </header>
-
     <main>
         <section class="hero">
             <div class="container">
-                <h1>🔴 Panic Button for Your Mac</h1>
+                <div class="hero-brand">
+                    <img src="images/paniclock-logo-name-v1.png" alt="PanicLock" class="hero-logo">
+                </div>
+                <h1><span class="accent">Panic Button</span> for Your Mac</h1>
                 <p class="tagline">Keep Touch ID for daily convenience. Get instant password-only security when you need it.</p>
                 <div class="cta-buttons">
-                    <a href="https://github.com/paniclock/paniclock/releases/latest" class="btn btn-primary">Download</a>
+                    <a href="https://github.com/paniclock/paniclock/releases/latest/download/PanicLock.dmg" class="btn btn-primary">Download Free</a>
                     <a href="#features" class="btn btn-secondary">Learn More</a>
+                </div>
+                
+                <!-- Hero Screenshot -->
+                <div class="hero-screenshot">
+                    <div class="mac-frame">
+                        <!-- Replace this div with your actual screenshot -->
+                        <div class="screenshot-placeholder" data-label="Menu Bar Screenshot">
+                            <img src="" alt="PanicLock Menu Bar" class="screenshot-image" style="display: none;">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -62,6 +65,36 @@
                         <div class="feature-icon">🔐</div>
                         <h3>Password Only</h3>
                         <p>Touch ID won't work until you unlock with password</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="screenshots" class="screenshots">
+            <div class="container">
+                <h2>See It In Action</h2>
+                <p class="section-intro">Simple, unobtrusive, always ready when you need it.</p>
+                <div class="screenshot-grid">
+                    <div class="screenshot-card">
+                        <div class="screenshot-placeholder" data-label="Menu Bar Icon">
+                            <img src="" alt="PanicLock in menu bar" class="screenshot-image" style="display: none;">
+                        </div>
+                        <h3>Lives in Your Menu Bar</h3>
+                        <p>Always one click away, never in your way</p>
+                    </div>
+                    <div class="screenshot-card">
+                        <div class="screenshot-placeholder" data-label="Preferences">
+                            <img src="" alt="PanicLock preferences" class="screenshot-image" style="display: none;">
+                        </div>
+                        <h3>Customizable Shortcut</h3>
+                        <p>Set your own global keyboard hotkey</p>
+                    </div>
+                    <div class="screenshot-card">
+                        <div class="screenshot-placeholder" data-label="Lock Screen">
+                            <img src="" alt="Locked screen requiring password" class="screenshot-image" style="display: none;">
+                        </div>
+                        <h3>Password Required</h3>
+                        <p>Touch ID disabled until you unlock</p>
                     </div>
                 </div>
             </div>
@@ -210,7 +243,7 @@
                 <p>Get the panic button your Mac deserves.</p>
                 <p class="opensource-note">PanicLock is open source software.</p>
                 <div class="cta-buttons">
-                    <a href="https://github.com/paniclock/paniclock/releases/latest" class="btn btn-primary btn-large">Download PanicLock</a>
+                    <a href="https://github.com/paniclock/paniclock/releases/latest/download/PanicLock.dmg" class="btn btn-primary btn-large">Download PanicLock</a>
                     <a href="https://github.com/paniclock/paniclock" class="btn btn-secondary">View on GitHub</a>
                 </div>
             </div>
@@ -219,11 +252,12 @@
 
     <footer>
         <div class="container">
+            <img src="images/paniclock-logo-no-text-v1.png" alt="PanicLock" class="footer-logo" height="40">
             <p>&copy; 2026 PanicLock. Open Source Security for macOS.</p>
             <p>
                 <a href="https://github.com/paniclock/paniclock" target="_blank">GitHub Repository</a>
             </p>
-            <p>Made by - <a href="https://conic.al/" target="_blank" rel="noopener noreferrer">Sean Byrne</a></p>
+            <p>Made by <a href="https://conic.al/" target="_blank" rel="noopener noreferrer">Sean Byrne</a></p>
         </div>
     </footer>
 </body>

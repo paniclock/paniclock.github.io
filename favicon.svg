@@ -1,18 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <defs>
-    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  <rect width="100" height="100" rx="20" fill="url(#gradient)"/>
-  <g transform="translate(50,50)">
-    <!-- Lock body -->
-    <rect x="-18" y="0" width="36" height="28" rx="4" fill="white"/>
-    <!-- Lock shackle -->
-    <path d="M -12,-10 C -12,-20 12,-20 12,-10" stroke="white" stroke-width="6" fill="none" stroke-linecap="round"/>
-    <!-- Keyhole -->
-    <circle cx="0" cy="10" r="4" fill="#667eea"/>
-    <rect x="-1.5" y="12" width="3" height="6" rx="1.5" fill="#667eea"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Lock body -->
+  <rect x="6" y="14" width="20" height="14" rx="3" fill="#1d1d1f"/>
+  <!-- Lock shackle -->
+  <path d="M10 14V10C10 6.68629 12.6863 4 16 4C19.3137 4 22 6.68629 22 10V14" stroke="#1d1d1f" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <!-- Keyhole accent in brand green -->
+  <circle cx="16" cy="21" r="2.5" fill="#7AB443"/>
 </svg>
