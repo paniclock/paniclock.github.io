@@ -74,6 +74,21 @@ body {
     line-height: 1.6;
 }
 
+.hero .tagline a {
+    color: #7AB443;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.hero .tagline a:visited {
+    color: #7AB443;
+}
+
+.hero .tagline a:hover {
+    border-bottom-color: #7AB443;
+}
+
 /* Buttons */
 .cta-buttons {
     display: flex;
@@ -213,43 +228,14 @@ body {
     box-shadow: var(--shadow-lg), inset 0 1px 0 rgba(255,255,255,0.5);
     max-width: 600px;
     width: 100%;
-}
-
-.screenshot-placeholder {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border-radius: 6px;
-    min-height: 280px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
     overflow: hidden;
 }
 
-.screenshot-placeholder::before {
-    content: attr(data-label);
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--text-light);
-    background: rgba(255,255,255,0.9);
-    padding: 8px 16px;
-    border-radius: 6px;
-    border: 2px dashed var(--border-color);
-}
-
-.screenshot-placeholder .screenshot-image {
+.mac-frame .screenshot-image {
     width: 100%;
     height: auto;
+    display: block;
     border-radius: 6px;
-}
-
-.screenshot-placeholder .screenshot-image[src]:not([src=""]) {
-    display: block !important;
-}
-
-.screenshot-placeholder .screenshot-image[src]:not([src=""]) + *,
-.screenshot-placeholder:has(.screenshot-image[src]:not([src=""]))::before {
-    display: none;
 }
 
 /* Screenshots Gallery Section */
@@ -283,15 +269,22 @@ body {
     text-align: center;
 }
 
-.screenshot-card .screenshot-placeholder {
-    min-height: 200px;
+.screenshot-card .screenshot-frame {
     border-radius: 12px;
     border: 1px solid var(--border-color);
     margin-bottom: 16px;
     transition: all 0.3s ease;
+    overflow: hidden;
+    background: var(--background-alt);
 }
 
-.screenshot-card:hover .screenshot-placeholder {
+.screenshot-card .screenshot-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.screenshot-card:hover .screenshot-frame {
     border-color: var(--primary-light);
     box-shadow: var(--shadow);
 }
@@ -595,6 +588,55 @@ body {
 
 .legal-case a:hover {
     text-decoration: underline;
+}
+
+/* Featured legal case with image */
+.legal-case-featured {
+    padding: 32px;
+}
+
+.legal-case-content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.legal-case-text {
+    flex: 1;
+}
+
+.legal-case-text p {
+    margin-bottom: 12px;
+}
+
+.legal-case-text p:last-child {
+    margin-bottom: 0;
+}
+
+.legal-case-image {
+    flex-shrink: 0;
+    width: 220px;
+}
+
+.legal-case-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+}
+
+@media (max-width: 768px) {
+    .legal-case-content {
+        flex-direction: column;
+    }
+    
+    .legal-case-image {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
 }
 
 /* Use Cases / Final CTA Section */
